@@ -11,7 +11,8 @@ function Quiz() {
     const [timer,setTimer] = useState(15)
 
     useEffect(() => {
-        fetch(`https://quizapi.io/api/v1/questions?apiKey=bp25pdADXD2rVjdNtGhU5J0hA69WKDkc1bSNco2p&limit=15&tags=Javascript`)
+        const API_KEY = process.env.REACT_APP_QUIZ_API
+        fetch(`https://quizapi.io/api/v1/questions?apiKey=${API_KEY}&limit=15&tags=Javascript`)
         .then(res => res.json())
         .then(data => {
             setQuiz(data)
