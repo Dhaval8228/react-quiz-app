@@ -1,5 +1,4 @@
 .quiz-title {
-	height: 5vh;
 	font-size: 30px;
 }
 
@@ -12,6 +11,12 @@
 	width: 25vw;
 	padding: 15px;
 	cursor: pointer;
+}
+
+.start-quiz-button:hover {
+	background-color: rgba(0, 0, 150, 0.4);
+	color: #fff;
+	border: 1px solid #fff;
 }
 
 .start-quiz-button:active,
